@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Amar Electronics - MCCBs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f8f8f8;
+        }
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+        .qr-section {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 20px 0;
+        }
+        .qr-section img {
+            width: 150px;
+            height: 150px;
+            border: 1px solid #ccc;
+        }
+        .product-card {
+            background: white;
+            margin: 15px auto;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 600px;
+        }
+        .product-card img {
+            width: 120px;
+            display: block;
+            margin-top: 10px;
+        }
+        .product-card button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .product-card p { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h1>AMAR ELECTRONICS</h1>
+    <div class="qr-section">
+        <div>
+            <img src="images/payment_qr.png" alt="Payment QR">
+            <p style="text-align:center;">Scan to Pay</p>
+        </div>
+        <div>
+            <img src="images/whatsapp_qr.png" alt="WhatsApp QR">
+            <p style="text-align:center;">Chat on WhatsApp</p>
+        </div>
+    </div>
+    
+    <div class="product-card">
+        <h3>Schneider Electric - Compact NSX100F</h3>
+        <img src="images/mccb1.jpg" alt="Compact NSX100F">
+        <p><strong>Model No:</strong> NSX100F-1</p>
+        <p><strong>Current:</strong> 100A</p>
+        <p><strong>Breaking Capacity:</strong> 36kA</p>
+        <p><strong>Price:</strong> ₹12450</p>
+        <button onclick="addToCart('Schneider Electric - Compact NSX100F', 12450)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Schneider Electric - Compact NSX250N</h3>
+        <img src="images/mccb2.jpg" alt="Compact NSX250N">
+        <p><strong>Model No:</strong> NSX250N-2</p>
+        <p><strong>Current:</strong> 250A</p>
+        <p><strong>Breaking Capacity:</strong> 50kA</p>
+        <p><strong>Price:</strong> ₹17690</p>
+        <button onclick="addToCart('Schneider Electric - Compact NSX250N', 17690)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Siemens - 3VA1 100</h3>
+        <img src="images/mccb3.jpg" alt="3VA1 100">
+        <p><strong>Model No:</strong> 3VA1100-5EL31-0AA0-3</p>
+        <p><strong>Current:</strong> 100A</p>
+        <p><strong>Breaking Capacity:</strong> 25kA</p>
+        <p><strong>Price:</strong> ₹14300</p>
+        <button onclick="addToCart('Siemens - 3VA1 100', 14300)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Siemens - 3VA2 250</h3>
+        <img src="images/mccb4.jpg" alt="3VA2 250">
+        <p><strong>Model No:</strong> 3VA2250-6ED31-0AA0-4</p>
+        <p><strong>Current:</strong> 250A</p>
+        <p><strong>Breaking Capacity:</strong> 55kA</p>
+        <p><strong>Price:</strong> ₹20500</p>
+        <button onclick="addToCart('Siemens - 3VA2 250', 20500)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>L&T - DN3-100D</h3>
+        <img src="images/mccb5.jpg" alt="DN3-100D">
+        <p><strong>Model No:</strong> DN3100D-5</p>
+        <p><strong>Current:</strong> 100A</p>
+        <p><strong>Breaking Capacity:</strong> 25kA</p>
+        <p><strong>Price:</strong> ₹14000</p>
+        <button onclick="addToCart('L&T - DN3-100D', 14000)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>L&T - DN3-250D</h3>
+        <img src="images/mccb6.jpg" alt="DN3-250D">
+        <p><strong>Model No:</strong> DN3250D-6</p>
+        <p><strong>Current:</strong> 250A</p>
+        <p><strong>Breaking Capacity:</strong> 36kA</p>
+        <p><strong>Price:</strong> ₹18850</p>
+        <button onclick="addToCart('L&T - DN3-250D', 18850)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Schneider Electric - Compact NSX100F</h3>
+        <img src="images/mccb7.jpg" alt="Compact NSX100F">
+        <p><strong>Model No:</strong> NSX100F-7</p>
+        <p><strong>Current:</strong> 100A</p>
+        <p><strong>Breaking Capacity:</strong> 36kA</p>
+        <p><strong>Price:</strong> ₹13650</p>
+        <button onclick="addToCart('Schneider Electric - Compact NSX100F', 13650)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Schneider Electric - Compact NSX250N</h3>
+        <img src="images/mccb8.jpg" alt="Compact NSX250N">
+        <p><strong>Model No:</strong> NSX250N-8</p>
+        <p><strong>Current:</strong> 250A</p>
+        <p><strong>Breaking Capacity:</strong> 50kA</p>
+        <p><strong>Price:</strong> ₹18890</p>
+        <button onclick="addToCart('Schneider Electric - Compact NSX250N', 18890)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Siemens - 3VA1 100</h3>
+        <img src="images/mccb9.jpg" alt="3VA1 100">
+        <p><strong>Model No:</strong> 3VA1100-5EL31-0AA0-9</p>
+        <p><strong>Current:</strong> 100A</p>
+        <p><strong>Breaking Capacity:</strong> 25kA</p>
+        <p><strong>Price:</strong> ₹15500</p>
+        <button onclick="addToCart('Siemens - 3VA1 100', 15500)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Siemens - 3VA2 250</h3>
+        <img src="images/mccb10.jpg" alt="3VA2 250">
+        <p><strong>Model No:</strong> 3VA2250-6ED31-0AA0-10</p>
+        <p><strong>Current:</strong> 250A</p>
+        <p><strong>Breaking Capacity:</strong> 55kA</p>
+        <p><strong>Price:</strong> ₹21700</p>
+        <button onclick="addToCart('Siemens - 3VA2 250', 21700)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>L&T - DN3-100D</h3>
+        <img src="images/mccb11.jpg" alt="DN3-100D">
+        <p><strong>Model No:</strong> DN3100D-11</p>
+        <p><strong>Current:</strong> 100A</p>
+        <p><strong>Breaking Capacity:</strong> 25kA</p>
+        <p><strong>Price:</strong> ₹15200</p>
+        <button onclick="addToCart('L&T - DN3-100D', 15200)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>L&T - DN3-250D</h3>
+        <img src="images/mccb12.jpg" alt="DN3-250D">
+        <p><strong>Model No:</strong> DN3250D-12</p>
+        <p><strong>Current:</strong> 250A</p>
+        <p><strong>Breaking Capacity:</strong> 36kA</p>
+        <p><strong>Price:</strong> ₹20050</p>
+        <button onclick="addToCart('L&T - DN3-250D', 20050)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Schneider Electric - Compact NSX100F</h3>
+        <img src="images/mccb13.jpg" alt="Compact NSX100F">
+        <p><strong>Model No:</strong> NSX100F-13</p>
+        <p><strong>Current:</strong> 100A</p>
+        <p><strong>Breaking Capacity:</strong> 36kA</p>
+        <p><strong>Price:</strong> ₹14850</p>
+        <button onclick="addToCart('Schneider Electric - Compact NSX100F', 14850)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Schneider Electric - Compact NSX250N</h3>
+        <img src="images/mccb14.jpg" alt="Compact NSX250N">
+        <p><strong>Model No:</strong> NSX250N-14</p>
+        <p><strong>Current:</strong> 250A</p>
+        <p><strong>Breaking Capacity:</strong> 50kA</p>
+        <p><strong>Price:</strong> ₹20090</p>
+        <button onclick="addToCart('Schneider Electric - Compact NSX250N', 20090)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Siemens - 3VA1 100</h3>
+        <img src="images/mccb15.jpg" alt="3VA1 100">
+        <p><strong>Model No:</strong> 3VA1100-5EL31-0AA0-15</p>
+        <p><strong>Current:</strong> 100A</p>
+        <p><strong>Breaking Capacity:</strong> 25kA</p>
+        <p><strong>Price:</strong> ₹16700</p>
+        <button onclick="addToCart('Siemens - 3VA1 100', 16700)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Siemens - 3VA2 250</h3>
+        <img src="images/mccb16.jpg" alt="3VA2 250">
+        <p><strong>Model No:</strong> 3VA2250-6ED31-0AA0-16</p>
+        <p><strong>Current:</strong> 250A</p>
+        <p><strong>Breaking Capacity:</strong> 55kA</p>
+        <p><strong>Price:</strong> ₹22900</p>
+        <button onclick="addToCart('Siemens - 3VA2 250', 22900)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>L&T - DN3-100D</h3>
+        <img src="images/mccb17.jpg" alt="DN3-100D">
+        <p><strong>Model No:</strong> DN3100D-17</p>
+        <p><strong>Current:</strong> 100A</p>
+        <p><strong>Breaking Capacity:</strong> 25kA</p>
+        <p><strong>Price:</strong> ₹16400</p>
+        <button onclick="addToCart('L&T - DN3-100D', 16400)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>L&T - DN3-250D</h3>
+        <img src="images/mccb18.jpg" alt="DN3-250D">
+        <p><strong>Model No:</strong> DN3250D-18</p>
+        <p><strong>Current:</strong> 250A</p>
+        <p><strong>Breaking Capacity:</strong> 36kA</p>
+        <p><strong>Price:</strong> ₹21250</p>
+        <button onclick="addToCart('L&T - DN3-250D', 21250)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Schneider Electric - Compact NSX100F</h3>
+        <img src="images/mccb19.jpg" alt="Compact NSX100F">
+        <p><strong>Model No:</strong> NSX100F-19</p>
+        <p><strong>Current:</strong> 100A</p>
+        <p><strong>Breaking Capacity:</strong> 36kA</p>
+        <p><strong>Price:</strong> ₹16050</p>
+        <button onclick="addToCart('Schneider Electric - Compact NSX100F', 16050)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Schneider Electric - Compact NSX250N</h3>
+        <img src="images/mccb20.jpg" alt="Compact NSX250N">
+        <p><strong>Model No:</strong> NSX250N-20</p>
+        <p><strong>Current:</strong> 250A</p>
+        <p><strong>Breaking Capacity:</strong> 50kA</p>
+        <p><strong>Price:</strong> ₹21290</p>
+        <button onclick="addToCart('Schneider Electric - Compact NSX250N', 21290)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Siemens - 3VA1 100</h3>
+        <img src="images/mccb21.jpg" alt="3VA1 100">
+        <p><strong>Model No:</strong> 3VA1100-5EL31-0AA0-21</p>
+        <p><strong>Current:</strong> 100A</p>
+        <p><strong>Breaking Capacity:</strong> 25kA</p>
+        <p><strong>Price:</strong> ₹17900</p>
+        <button onclick="addToCart('Siemens - 3VA1 100', 17900)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Siemens - 3VA2 250</h3>
+        <img src="images/mccb22.jpg" alt="3VA2 250">
+        <p><strong>Model No:</strong> 3VA2250-6ED31-0AA0-22</p>
+        <p><strong>Current:</strong> 250A</p>
+        <p><strong>Breaking Capacity:</strong> 55kA</p>
+        <p><strong>Price:</strong> ₹24100</p>
+        <button onclick="addToCart('Siemens - 3VA2 250', 24100)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>L&T - DN3-100D</h3>
+        <img src="images/mccb23.jpg" alt="DN3-100D">
+        <p><strong>Model No:</strong> DN3100D-23</p>
+        <p><strong>Current:</strong> 100A</p>
+        <p><strong>Breaking Capacity:</strong> 25kA</p>
+        <p><strong>Price:</strong> ₹17600</p>
+        <button onclick="addToCart('L&T - DN3-100D', 17600)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>L&T - DN3-250D</h3>
+        <img src="images/mccb24.jpg" alt="DN3-250D">
+        <p><strong>Model No:</strong> DN3250D-24</p>
+        <p><strong>Current:</strong> 250A</p>
+        <p><strong>Breaking Capacity:</strong> 36kA</p>
+        <p><strong>Price:</strong> ₹22450</p>
+        <button onclick="addToCart('L&T - DN3-250D', 22450)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Schneider Electric - Compact NSX100F</h3>
+        <img src="images/mccb25.jpg" alt="Compact NSX100F">
+        <p><strong>Model No:</strong> NSX100F-25</p>
+        <p><strong>Current:</strong> 100A</p>
+        <p><strong>Breaking Capacity:</strong> 36kA</p>
+        <p><strong>Price:</strong> ₹17250</p>
+        <button onclick="addToCart('Schneider Electric - Compact NSX100F', 17250)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Schneider Electric - Compact NSX250N</h3>
+        <img src="images/mccb26.jpg" alt="Compact NSX250N">
+        <p><strong>Model No:</strong> NSX250N-26</p>
+        <p><strong>Current:</strong> 250A</p>
+        <p><strong>Breaking Capacity:</strong> 50kA</p>
+        <p><strong>Price:</strong> ₹22490</p>
+        <button onclick="addToCart('Schneider Electric - Compact NSX250N', 22490)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Siemens - 3VA1 100</h3>
+        <img src="images/mccb27.jpg" alt="3VA1 100">
+        <p><strong>Model No:</strong> 3VA1100-5EL31-0AA0-27</p>
+        <p><strong>Current:</strong> 100A</p>
+        <p><strong>Breaking Capacity:</strong> 25kA</p>
+        <p><strong>Price:</strong> ₹19100</p>
+        <button onclick="addToCart('Siemens - 3VA1 100', 19100)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>Siemens - 3VA2 250</h3>
+        <img src="images/mccb28.jpg" alt="3VA2 250">
+        <p><strong>Model No:</strong> 3VA2250-6ED31-0AA0-28</p>
+        <p><strong>Current:</strong> 250A</p>
+        <p><strong>Breaking Capacity:</strong> 55kA</p>
+        <p><strong>Price:</strong> ₹25300</p>
+        <button onclick="addToCart('Siemens - 3VA2 250', 25300)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>L&T - DN3-100D</h3>
+        <img src="images/mccb29.jpg" alt="DN3-100D">
+        <p><strong>Model No:</strong> DN3100D-29</p>
+        <p><strong>Current:</strong> 100A</p>
+        <p><strong>Breaking Capacity:</strong> 25kA</p>
+        <p><strong>Price:</strong> ₹18800</p>
+        <button onclick="addToCart('L&T - DN3-100D', 18800)">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <h3>L&T - DN3-250D</h3>
+        <img src="images/mccb30.jpg" alt="DN3-250D">
+        <p><strong>Model No:</strong> DN3250D-30</p>
+        <p><strong>Current:</strong> 250A</p>
+        <p><strong>Breaking Capacity:</strong> 36kA</p>
+        <p><strong>Price:</strong> ₹23650</p>
+        <button onclick="addToCart('L&T - DN3-250D', 23650)">Add to Cart</button>
+    </div>
+    
+    
+<script>
+let cart = [];
+
+function addToCart(productName, price) {
+    cart.push({ name: productName, price: price });
+    updateCartDisplay();
+}
+
+function updateCartDisplay() {
+    const cartList = document.getElementById('cart-items');
+    cartList.innerHTML = '';
+    let total = 0;
+    cart.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item.name + " - ₹" + item.price;
+        cartList.appendChild(li);
+        total += item.price;
+    });
+    document.getElementById('cart-total').textContent = "Total: ₹" + total;
+}
+</script>
+<div style="margin-top: 40px; padding: 20px; background: #fff; border-radius: 8px; max-width:600px; margin-left:auto; margin-right:auto;">
+  <h2>🛒 Cart</h2>
+  <ul id="cart-items" style="list-style:none; padding:0;"></ul>
+  <p id="cart-total"><strong>Total: ₹0</strong></p>
+</div>
+
+    
+<div style="margin-top:40px; text-align:center;">
+    <h2>Contact Us</h2>
+    <p><strong>Name:</strong> Amar Jaiswal</p>
+    <p><strong>Email:</strong> amarjaiswaljii@gmail.com</p>
+    <p><strong>Phone:</strong> +91 9674937158</p>
+    <p><strong>Address:</strong> Shop No. 23, Electronics Market, Lucknow, Uttar Pradesh, India</p>
+</div>
+
+</body>
+</html>
